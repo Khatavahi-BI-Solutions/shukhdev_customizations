@@ -15,7 +15,7 @@ app_license = "MIT"
 # include js, css files in header of desk.html
 # app_include_css = "/assets/shukhdev_customizations/css/shukhdev_customizations.css"
 # app_include_js = "/assets/shukhdev_customizations/js/shukhdev_customizations.js"
-
+app_include_js = "/assets/khatavahi/js/khatavahi.js"
 # include js, css files in header of web template
 # web_include_css = "/assets/shukhdev_customizations/css/shukhdev_customizations.css"
 # web_include_js = "/assets/shukhdev_customizations/js/shukhdev_customizations.js"
