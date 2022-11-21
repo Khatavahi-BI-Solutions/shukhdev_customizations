@@ -12,5 +12,7 @@ def setup_custom_fields():
 				 ),
 		]
 	}
-
-	create_custom_fields(custom_fields)
+	try:
+		create_custom_fields(custom_fields)
+	except:
+		print("Exception while createing customfield")
