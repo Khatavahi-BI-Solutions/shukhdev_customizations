@@ -64,7 +64,7 @@ app_include_js = "/assets/shukhdev_customizations/js/khatavahi.js"
 
 # before_uninstall = "shukhdev_customizations.uninstall.before_uninstall"
 # after_uninstall = "shukhdev_customizations.uninstall.after_uninstall"
-
+after_migrate = "shukhdev_customizations.custom_field.setup_custom_fields"
 # Desk Notifications
 # ------------------
 # See frappe.core.notifications.get_notification_config
@@ -95,13 +95,11 @@ app_include_js = "/assets/shukhdev_customizations/js/khatavahi.js"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	"Sales Invoice": {
+		"validate": "shukhdev_customizations.sales_invoice.validate"
+	}
+}
 
 # Scheduled Tasks
 # ---------------
