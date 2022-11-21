@@ -3,7 +3,8 @@ frappe.ui.form.on("Sales Invoice", {
         frm.set_query("sales_income_account", function(doc) {
 			return {
 				filters: {
-                    "root_type":"Income"
+                    "root_type":"Income",
+                    "is_group":false
                 }
 			};
 		});
