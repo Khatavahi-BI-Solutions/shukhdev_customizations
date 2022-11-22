@@ -19,7 +19,7 @@ app_include_js = "/assets/shukhdev_customizations/js/khatavahi.js"
 # include js, css files in header of web template
 # web_include_css = "/assets/shukhdev_customizations/css/shukhdev_customizations.css"
 # web_include_js = "/assets/shukhdev_customizations/js/shukhdev_customizations.js"
-web_include_css = "/assets/shukhdev_customizations/css/shukhdev.css"
+app_include_css = "/assets/shukhdev_customizations/css/shukhdev.css"
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "shukhdev_customizations/public/scss/website"
 
