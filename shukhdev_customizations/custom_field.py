@@ -19,6 +19,21 @@ def setup_custom_fields():
 				 reqd=1,
 				 options='Account'
 				 ),
+			dict(fieldname='bill_file',
+				 label='Bill File',
+				 fieldtype='Attach',
+				 insert_after='description',
+				 reqd=1,
+				 ),
+		],
+		"Expense Claim Detail": [
+			dict(fieldname='bill_file',
+				 label='Bill File',
+				 fieldtype='Attach',
+				 insert_after='posting_time',
+				 reqd=1,
+				 in_list_view = 1
+				 ),
 		]
 	}
 	try:
