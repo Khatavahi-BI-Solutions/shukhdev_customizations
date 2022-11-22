@@ -101,6 +101,9 @@ after_migrate = "shukhdev_customizations.custom_field.setup_custom_fields"
 doc_events = {
 	"Sales Invoice": {
 		"validate": "shukhdev_customizations.sales_invoice.validate"
+	},
+	"Purchase Invoice": {
+		"validate": "shukhdev_customizations.purchase_invoice.validate"
 	}
 }
 
