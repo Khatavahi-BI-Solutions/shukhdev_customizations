@@ -10,6 +10,15 @@ def setup_custom_fields():
 				 reqd=1,
 				 options='Account'
 				 ),
+		],
+		"Purchase Invoice": [
+			dict(fieldname='purchase_expense_account',
+				 label='Purchase Expense Account',
+				 fieldtype='Link',
+				 insert_after='update_stock',
+				 reqd=1,
+				 options='Account'
+				 ),
 		]
 	}
 	try:

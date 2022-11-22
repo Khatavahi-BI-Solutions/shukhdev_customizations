@@ -31,7 +31,10 @@ app_include_css = "/assets/shukhdev_customizations/css/shukhdev.css"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-doctype_js = {"Sales Invoice" : "public/js/salesinvoice.js"}
+doctype_js = {
+	"Sales Invoice" : "public/js/salesinvoice.js",
+	"Purchase Invoice" : "public/js/purchaseinvoice.js"
+}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
