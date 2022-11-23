@@ -20,7 +20,7 @@ def setup_custom_fields():
 				 options='Account'
 				 ),
 			dict(fieldname='bill_file',
-				 label='Bill File',
+				 label='Bill Attachment',
 				 fieldtype='Attach',
 				 insert_after='description',
 				 reqd=1,
@@ -28,7 +28,7 @@ def setup_custom_fields():
 		],
 		"Expense Claim Detail": [
 			dict(fieldname='bill_file',
-				 label='Bill File',
+				 label='Bill Attachment',
 				 fieldtype='Attach',
 				 insert_after='posting_time',
 				 reqd=1,
