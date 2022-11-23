@@ -22,7 +22,7 @@ def setup_custom_fields():
 			dict(fieldname='bill_file',
 				 label='Bill Attachment',
 				 fieldtype='Attach',
-				 insert_after='description',
+				 insert_after='posting_time',
 				 reqd=1,
 				 ),
 		],
