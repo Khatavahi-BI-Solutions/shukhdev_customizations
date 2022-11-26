@@ -19,6 +19,11 @@ def setup_custom_fields():
 				 reqd=1,
 				 options='Account'
 				 ),
+			dict(fieldname='ignore_purchase_expense_account',
+				 label='Ignore Purchase Expense Account',
+				 fieldtype='Check',
+				 insert_after='purchase_expense_account',
+				 ),
 			dict(fieldname='bill_file',
 				 label='Bill Attachment',
 				 fieldtype='Attach',
