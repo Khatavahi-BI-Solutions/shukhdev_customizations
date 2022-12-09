@@ -16,13 +16,15 @@ def setup_custom_fields():
 				 label='Purchase Expense Account',
 				 fieldtype='Link',
 				 insert_after='update_stock',
-				 reqd=1,
+				 reqd=0,
+				 hidden=1,
 				 options='Account'
 				 ),
 			dict(fieldname='ignore_purchase_expense_account',
 				 label='Ignore Purchase Expense Account',
 				 fieldtype='Check',
 				 insert_after='purchase_expense_account',
+				 hidden=1
 				 ),
 			dict(fieldname='bill_file',
 				 label='Bill Attachment',
