@@ -15,7 +15,8 @@ def setup_custom_fields():
 				 insert_after='set_default_sales_income_account',
 				 mandatory_depends_on= 'eval:doc.set_default_sales_income_account',
 				 depends_on= 'eval:doc.set_default_sales_income_account',
-				 options='Account'
+				 options='Account',
+				 reqd = 0
 				 ),
 		],
 		"Purchase Invoice": [
