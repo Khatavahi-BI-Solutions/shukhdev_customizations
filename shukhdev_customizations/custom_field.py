@@ -3,11 +3,18 @@ from frappe.custom.doctype.custom_field.custom_field import create_custom_fields
 def setup_custom_fields():
 	custom_fields = {
 		"Sales Invoice": [
+			dict(fieldname='set_default_sales_income_account',
+				 label='Set Default Sales Income Accouunt',
+				 fieldtype='Check',
+				 insert_after='update_stock',
+				 hidden=0
+				 ),
 			dict(fieldname='sales_income_account',
 				 label='Income Account',
 				 fieldtype='Link',
-				 insert_after='update_stock',
-				 reqd=1,
+				 insert_after='set_default_sales_income_account',
+				 mandatory_depends_on= 'eval:doc.set_default_sales_income_account',
+				 depends_on= 'eval:doc.set_default_sales_income_account',
 				 options='Account'
 				 ),
 		],
