@@ -39,6 +39,7 @@ def setup_custom_fields():
 				 fieldtype='Attach',
 				 insert_after='posting_time',
 				 reqd=1,
+				 print_hide=1,
 				 ),
 		],
 		"Expense Claim Detail": [
@@ -47,7 +48,8 @@ def setup_custom_fields():
 				 fieldtype='Attach',
 				 insert_after='posting_time',
 				 reqd=1,
-				 in_list_view = 1
+				 in_list_view = 1,
+				 print_hide=1
 				 ),
 		]
 	}
