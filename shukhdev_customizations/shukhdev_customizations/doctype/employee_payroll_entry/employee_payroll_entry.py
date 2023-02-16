@@ -22,7 +22,16 @@ class EmployeePayrollEntry(Document):
 		payroll_entry.exchange_rate = 1
 		payroll_entry.fill_employee_details()
 		payroll_entry.save()
+		frappe.db.commit()
 		try:
 			payroll_entry.submit()
+		except:
+			pass
+		try:
+			payroll_entry.submit_salary_slips()
+		except:
+			pass
+		try:
+			payroll_entry.make_payment_entry()
 		except:
 			pass
