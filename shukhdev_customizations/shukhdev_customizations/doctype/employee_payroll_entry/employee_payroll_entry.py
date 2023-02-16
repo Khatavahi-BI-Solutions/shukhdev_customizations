@@ -20,4 +20,5 @@ class EmployeePayrollEntry(Document):
 		payroll_entry.end_date = self.end_date
 		payroll_entry.payroll_payable_account = row.account
 		payroll_entry.exchange_rate = 1
+		payroll_entry.fill_employee_details()
 		payroll_entry.save()
