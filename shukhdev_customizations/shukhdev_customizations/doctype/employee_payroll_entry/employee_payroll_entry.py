@@ -22,3 +22,7 @@ class EmployeePayrollEntry(Document):
 		payroll_entry.exchange_rate = 1
 		payroll_entry.fill_employee_details()
 		payroll_entry.save()
+		try:
+			payroll_entry.submit()
+		except:
+			pass
